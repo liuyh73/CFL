@@ -12,15 +12,24 @@ Suppose there are n facilities and m customers. We wish to choose:
 
 (4) The total demand assigned to a facility must not exceed its capacity.
 
-## [genetic algorithm](https://en.wikipedia.org/wiki/Genetic_algorithm)
+## [遗传算法（genetic algorithm）](https://en.wikipedia.org/wiki/Genetic_algorithm)
 
 遗传算法是受遗传学中自然选择和遗传机制启发发展起来的一种搜索算法。基本思想是使用模拟生物和人类进化的方法求解复杂的优化问题，因而也称作为模拟进化优化算法。模拟进化优化算法在计算原理上是自适应的，结构上是并行的，而且模仿了人的智能处理特征，因而称为人工智能的一个重要研究领域。
 
-#### 基本定义
+### 编译执行
+```bash
+GA$ g++ main.cpp ./customer/customer.cpp ./facility/facility.cpp -std=c++11
+GA$ ./a.exe
+```
+运行结果查看Result/GA.svc
 
-**个体（individual）：**个体是一个数据结构，用来描述基本的遗传结构。例如，用0、1组成的串可以表示个体。这样的串叫染色体，其中每个0或1叫等位基因。这样的一个串于某个个体相关联，则称为该个体的基因型。
+## [模拟退火（Simulated Annealing）](https://zh.wikipedia.org/wiki/%E6%A8%A1%E6%8B%9F%E9%80%80%E7%81%AB)
 
-**适应性（fitness）：**每个个体有一对应的适应值。再优化问题中，适应值来自于一个估计函数。
+模拟退火是克服爬山缺点的有效方案，其基本思想是在系统能量减小的趋势这样一个变化过程中，偶尔允许系统跳到能量较高的状态，以避开局部极小点，最终稳定到全局最小点。
 
-**群体（population）：**有个体组成的集合。
-
+### 编译执行
+```bash
+GA$ g++ main.cpp ./customer/customer.cpp ./facility/facility.cpp -std=c++11
+GA$ ./a.exe
+```
+运行结果查看Result/SA.svc

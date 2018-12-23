@@ -1,7 +1,7 @@
 import numpy as np
 import re
 
-checkFile = "GA/Result/GA.csv"
+checkFile = "SA/Result/SA.csv"
 filePath = "Instances/p"
 
 class CLFPChecker:

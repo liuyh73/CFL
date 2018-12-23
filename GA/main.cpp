@@ -188,9 +188,6 @@ void GA() {
     vector<vector<customer>>customersGeneration2;
     vector<vector<facility>>facilitiesGeneration2;
     int count = 0;
-    selection(customersGeneration2, facilitiesGeneration2);
-    reproduction(customersGeneration2, facilitiesGeneration2);
-    replace(customersGeneration2, facilitiesGeneration2);
     while(count < generations) {
         selection(customersGeneration2, facilitiesGeneration2);
         reproduction(customersGeneration2, facilitiesGeneration2);
