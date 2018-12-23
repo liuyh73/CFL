@@ -185,7 +185,7 @@ void release() {
 int main() {
     csv.open("Result/SA.csv", ios::out);
     csv<<"Instance,"<<"Time,"<<"Cost,"<<"Facility Open Status,"<<"Customer Status"<<endl;
-    for(int i=1; i<=71; i++) {
+    for(int i=1; i<=1; i++) {
         string path = "../Instances/p"+ to_string(i);
         FILE *fp = freopen(path.c_str() , "r", stdin);
         if(fp==nullptr){
